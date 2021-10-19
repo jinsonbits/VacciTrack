@@ -11,7 +11,7 @@ namespace VacciTrack.ViewModels
     {
         private string text;
         private string description;
-        private DateTime birthdate;
+        private string birthdate;
 
         public NewItemViewModel()
         {
@@ -24,7 +24,7 @@ namespace VacciTrack.ViewModels
         private bool ValidateSave()
         {
             return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+                && !String.IsNullOrWhiteSpace(birthdate);
         }
 
         public string Text
@@ -39,7 +39,7 @@ namespace VacciTrack.ViewModels
             set => SetProperty(ref description, value);
         }
 
-        public DateTime BirthDate
+        public string BirthDate
         {
             get => birthdate;
             set => SetProperty(ref birthdate, value);
@@ -61,7 +61,7 @@ namespace VacciTrack.ViewModels
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
                 Description = Description,
-                BirthDate = BirthDate
+                BirthDate = BirthDate.ToString()
             };
 
             await DataStore.AddItemAsync(newItem);

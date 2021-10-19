@@ -12,7 +12,7 @@ namespace VacciTrack.ViewModels
         private string itemId;
         private string text;
         private string description;
-        private DateTime birthdate;
+        private String birthdate;
         public string Id { get; set; }
 
         public string Text
@@ -40,7 +40,7 @@ namespace VacciTrack.ViewModels
             }
         }
 
-        public DateTime BirthDate
+        public String BirthDate
         {
             get => birthdate;
             set => SetProperty(ref birthdate, value);
@@ -54,7 +54,8 @@ namespace VacciTrack.ViewModels
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;
-                BirthDate = item.BirthDate;
+                string v = item.BirthDate.ToString();
+                BirthDate = v;
             }
             catch (Exception)
             {

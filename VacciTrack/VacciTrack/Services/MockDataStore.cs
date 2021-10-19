@@ -15,8 +15,8 @@ namespace VacciTrack.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-1", Description="This is an item description." ,BirthDate=DateTime.Now},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-2", Description="This is an item description.",BirthDate=DateTime.Now}
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-1", Description="This is an item description." ,BirthDate=DateTime.Now.ToString()},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-2", Description="This is an item description.",BirthDate=DateTime.Now.ToString()}
 
             };
             
