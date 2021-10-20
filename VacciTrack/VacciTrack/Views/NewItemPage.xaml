@@ -12,8 +12,8 @@
             <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
             <Label Text="Date of Birth" FontSize="Medium" />
             <!--<Entry Text="{Binding BirthDate,Mode=TwoWay}" FontSize="Medium"/>-->
-            <!--<DatePicker Date="9/17/2020" Format="d" x:Name="DatePicker" {Binding BirthDate,Mode=TwoWay}/>-->
-            <Entry Text="{Binding BirthDate,Mode=TwoWay}" FontSize="Medium"/>
+            <DatePicker Date="{Binding BirthDate,Mode=TwoWay}" Format="D" x:Name="DatePicker"/>
+            <!--<Entry Text="{Binding BirthDate,Mode=TwoWay}" FontSize="Medium"/>-->
             
 
             <!--<DatePicker x:Name="dobPicker"
