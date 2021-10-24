@@ -15,8 +15,8 @@ namespace VacciTrack.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-1", Description="This is an item description." ,BirthDate=DateTime.Now.ToShortDateString()},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-2", Description="This is an item description.",BirthDate=DateTime.Now.ToShortDateString()}
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-1", Description="Child-1 is having next vaccination due in 5 days" ,BirthDate=DateTime.Now.ToShortDateString()},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Child-2", Description="Child-2 is having next vaccination due in 20 days",BirthDate=DateTime.Now.ToShortDateString()}
 
             };
             
